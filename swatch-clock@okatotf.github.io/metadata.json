@@ -1,0 +1,8 @@
+{
+  "name": "Swatch Clock",
+  "description": "An extension which displays the Swatch Internet Time on the panel.",
+  "uuid": "swatch-clock@okatotf.github.io",
+  "shell-version": [
+    "44"
+  ]
+}
