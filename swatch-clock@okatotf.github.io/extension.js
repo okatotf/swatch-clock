@@ -4,7 +4,7 @@ const Main = imports.ui.main;
 function getSwatchTime() {
     const date = new Date();
     const [hours, minutes, seconds, milliseconds] = [
-	    (date.getUTCHours() + 1) % 24,
+	(date.getUTCHours() + 1) % 24,
     	date.getUTCMinutes(),
     	date.getUTCSeconds(),
     	date.getUTCMilliseconds()
