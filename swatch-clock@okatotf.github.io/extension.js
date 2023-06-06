@@ -11,8 +11,8 @@ function getSwatchTime() {
     ];
     const timeInMilliseconds = ((hours * 60 + minutes) * 60 + seconds) * 1000 + milliseconds;
     const millisecondsPerBeat = 86400;
-    const swatchTime = Math.abs(timeInMilliseconds / millisecondsPerBeat);
-    return `@${swatchTime.toFixed(2)}`;
+    const swatchTime = Math.trunc(timeInMilliseconds / millisecondsPerBeat); // changed to Math.trunc to truncate decimals AND not round up when the beats get to >.5
+    return `@${swatchTime.toFixed(2)}`; //edit @ symbol to change your preceeding character. edit the (2) to the length of trailing fractional beats you want to see.
 }
 
 class Extension {
